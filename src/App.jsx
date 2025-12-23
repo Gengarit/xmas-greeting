@@ -1,4 +1,5 @@
 import CircularGallery from './components/CircularGallery';
+import Typewriter from './components/Typewriter';
 
 function App() {
   const items = [
@@ -29,11 +30,10 @@ function App() {
         padding: '1rem',
         minHeight: '200px'
       }}>
-        <div style={{ fontSize: 'clamp(2rem, 8vw, 4rem)', marginBottom: '0.5rem' }}>🎄</div>
         <h1 style={{ 
           fontSize: 'clamp(1.3rem, 5vw, 4rem)', 
           fontWeight: 'bold',
-          marginBottom: '0.5rem',
+          marginBottom: '1rem',
           background: 'linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcf63, #4ecdc4, #ff6b6b)',
           backgroundSize: '300% 300%',
           WebkitBackgroundClip: 'text',
@@ -43,9 +43,12 @@ function App() {
           padding: '0 1rem',
           maxWidth: '90vw'
         }}>
-          Merry Christmas, Tito Rom2!
+          <Typewriter 
+            text="Merry Christmas, Tito Rom2!" 
+            speed={80}
+            delay={500}
+          />
         </h1>
-        <div style={{ fontSize: 'clamp(2rem, 8vw, 4rem)', marginTop: '0.5rem' }}>🎄</div>
         <p style={{ 
           fontSize: 'clamp(0.75rem, 2.5vw, 1.25rem)', 
           opacity: 0.8,
@@ -54,7 +57,7 @@ function App() {
           marginTop: '0.5rem',
           maxWidth: '90vw'
         }}>
-          Wishing you joy, peace, and happiness this holiday season ✨
+          Wishing you joy, peace, and happiness this holiday season
         </p>
       </div>
 
