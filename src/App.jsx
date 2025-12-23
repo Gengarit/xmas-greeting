@@ -29,8 +29,9 @@ function App() {
         padding: '1rem',
         minHeight: '200px'
       }}>
+        <div style={{ fontSize: 'clamp(2rem, 8vw, 4rem)', marginBottom: '0.5rem' }}>🎄</div>
         <h1 style={{ 
-          fontSize: 'clamp(1.5rem, 6vw, 5rem)', 
+          fontSize: 'clamp(1.3rem, 5vw, 4rem)', 
           fontWeight: 'bold',
           marginBottom: '0.5rem',
           background: 'linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcf63, #4ecdc4, #ff6b6b)',
@@ -38,16 +39,20 @@ function App() {
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           animation: 'gradient 3s ease infinite',
-          lineHeight: 1.2,
-          padding: '0 0.5rem'
+          lineHeight: 1.3,
+          padding: '0 1rem',
+          maxWidth: '90vw'
         }}>
-          🎄 Merry Christmas, Tito Rom2! 🎄
+          Merry Christmas, Tito Rom2!
         </h1>
+        <div style={{ fontSize: 'clamp(2rem, 8vw, 4rem)', marginTop: '0.5rem' }}>🎄</div>
         <p style={{ 
-          fontSize: 'clamp(0.875rem, 3vw, 1.5rem)', 
+          fontSize: 'clamp(0.75rem, 2.5vw, 1.25rem)', 
           opacity: 0.8,
           fontWeight: '300',
-          padding: '0 1rem'
+          padding: '0 1.5rem',
+          marginTop: '0.5rem',
+          maxWidth: '90vw'
         }}>
           Wishing you joy, peace, and happiness this holiday season ✨
         </p>
