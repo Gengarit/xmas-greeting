@@ -1,4 +1,5 @@
 import BackgroundAnimation from './components/BackgroundAnimation/BackgroundAnimation';
+import ScrambledText from './components/ScrambledText/ScrambledText';
 import Typewriter from './components/Typewriter';
 
 function App() {
@@ -41,11 +42,7 @@ function App() {
           padding: '0 1rem',
           maxWidth: '95vw'
         }}>
-          <Typewriter
-            text="Happy new year everyone"
-            speed={70}
-            delay={300}
-          />
+          <ScrambledText text="Happy new year everyone" speed={45} revealDelay={600} />
         </h1>
         <p style={{
           fontSize: 'clamp(0.75rem, 2.5vw, 1.25rem)',
