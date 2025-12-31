@@ -51,4 +51,5 @@ const Typewriter = ({
   );
 };
 
+
 export default Typewriter;

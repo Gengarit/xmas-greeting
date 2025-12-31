@@ -1,23 +1,16 @@
-import CircularGallery from './components/CircularGallery';
+import BackgroundAnimation from './components/BackgroundAnimation/BackgroundAnimation';
 import Typewriter from './components/Typewriter';
 
 function App() {
-  const items = [
-    { image: '/xmas_pic1.jpg', text: 'Airport' },
-    { image: '/xmas_pic2.jpg', text: 'Acienda' },
-    { image: '/xmas_pic3.jpg', text: 'Tagaytay' },
-    { image: '/xmas_pic4.jpg', text: 'Taal Volcano' },
-    { image: '/xmas_pic5.jpg', text: 'SM' },
-    { image: '/xmas_pic6.jpg', text: 'Ayala' },
-  ];
+  // images reset — gallery removed
 
   return (
-    <div style={{ 
-      height: '100vh', 
-      display: 'flex', 
-      flexDirection: 'column',
-      backgroundColor: '#000'
+    <div style={{
+      height: '100vh',
+      display: 'flex',
+      flexDirection: 'column'
     }}>
+      <BackgroundAnimation />
       {/* Merry Christmas Greeting */}
       <div style={{ 
         flex: 1, 
@@ -30,51 +23,39 @@ function App() {
         padding: '1rem',
         minHeight: '200px'
       }}>
-        <h1 style={{ 
-          fontSize: 'clamp(1.3rem, 5vw, 4rem)', 
-          fontWeight: 'bold',
+        <h1 style={{
+          fontSize: 'clamp(1.3rem, 7vw, 5rem)',
+          fontWeight: '800',
           marginBottom: '1rem',
-          background: 'linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcf63, #4ecdc4, #ff6b6b)',
-          backgroundSize: '300% 300%',
+          background: 'linear-gradient(90deg, #ffd93d, #ff6b6b, #6bcf63)',
+          backgroundSize: '200% 200%',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
-          animation: 'gradient 3s ease infinite',
-          lineHeight: 1.3,
+          animation: 'gradient 4s ease infinite',
+          lineHeight: 1.05,
           padding: '0 1rem',
-          maxWidth: '90vw'
+          maxWidth: '95vw'
         }}>
-          <Typewriter 
-            text="Merry Christmas, Tito Rom2!" 
-            speed={80}
-            delay={500}
+          <Typewriter
+            text="Happy new year everyone"
+            speed={70}
+            delay={300}
           />
         </h1>
-        <p style={{ 
-          fontSize: 'clamp(0.75rem, 2.5vw, 1.25rem)', 
-          opacity: 0.8,
-          fontWeight: '300',
+        <p style={{
+          fontSize: 'clamp(0.75rem, 2.5vw, 1.25rem)',
+          opacity: 0.9,
+          fontWeight: '400',
           padding: '0 1.5rem',
           marginTop: '0.5rem',
           maxWidth: '90vw'
         }}>
-          Wishing you joy, peace, and happiness this holiday season
+          Wishing you a bright and joyful year ahead
         </p>
       </div>
 
       {/* Gallery at the bottom */}
-      <div style={{ 
-        height: 'clamp(250px, 50vh, 400px)', 
-        position: 'relative',
-        minHeight: '250px'
-      }}>
-        <CircularGallery 
-          items={items}
-          bend={0} 
-          textColor="#ffffff" 
-          borderRadius={0.05} 
-          scrollEase={0.02}
-        />
-      </div>
+      {/* Circular gallery removed as requested */}
     </div>
   );
 }

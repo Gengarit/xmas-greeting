@@ -1,0 +1,17 @@
+.bg-anim-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bg-anim-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.greeting-center {
+  position: relative;
+  z-index: 2;
+}
