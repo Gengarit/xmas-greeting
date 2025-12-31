@@ -48,3 +48,18 @@ body {
     touch-action: pan-y;
   }
 }
+
+/* Greeting signature styling */
+.greeting-signature {
+  font-family: 'Pacifico', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  font-size: 1rem;
+  opacity: 0.9;
+  color: #fff;
+  margin-top: 0.6rem;
+  text-align: right;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .greeting-signature { text-align: center; }
+}

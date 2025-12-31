@@ -54,15 +54,7 @@ function App() {
         }}>
           Wishing you a bright and joyful year ahead
         </p>
-        <p style={{
-          fontSize: '0.95rem',
-          opacity: 0.85,
-          fontWeight: '600',
-          marginTop: '0.75rem',
-          fontStyle: 'normal'
-        }}>
-          from john eric bayer
-        </p>
+        <p className="greeting-signature">from john eric bayer</p>
       </div>
 
       {/* Gallery at the bottom */}
