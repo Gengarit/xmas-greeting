@@ -4,6 +4,11 @@ import Typewriter from './components/Typewriter';
 function App() {
   // images reset — gallery removed
 
+  // update document title at runtime
+  if (typeof document !== 'undefined') {
+    document.title = 'Happy New Year! 🎉';
+  }
+
   return (
     <div style={{
       height: '100vh',
